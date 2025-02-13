@@ -23,7 +23,11 @@ Host sagemaker-notebook
     User sagemaker-user
 ```
 
-3. In a terminal run the following command (keep it running) to forward traffic from your local instance to the notebook SSH server over SSM. Make sure to update *$YOUR_MANAGED_INSTANCE_ID*
+3. Install the SSM (Session Manager) Plugin for AWS (Local Machine)
+
+https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-macos-overview.html
+
+4. In a terminal run the following command (keep it running) to forward traffic from your local instance to the notebook SSH server over SSM. Make sure to update *$YOUR_MANAGED_INSTANCE_ID*
 
 ```
 aws ssm start-session \
@@ -33,4 +37,4 @@ aws ssm start-session \
     --region us-east-1
 ```
 
-4. Setup your editor to work with the remote SSH Session. In VSCode there's an extension called "Remote - SSH". *Optionally* setup a custom shell command to make starting the `aws ssm start-session` locally easier.
+5. Setup your editor to work with the remote SSH Session. In VSCode there's an extension called "Remote - SSH". *Optionally* setup a custom shell command to make starting the `aws ssm start-session` locally easier.
