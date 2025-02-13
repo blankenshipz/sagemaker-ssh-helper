@@ -1,6 +1,6 @@
 ###
 
-1. Close this repo to your notebook and run the following script to setup the notebook node. You will be prompted to set a password for your user, this is the password that you'll use for SSH Connections.
+1. Clone this repo to your notebook and run the following script to setup the notebook node. You will be prompted to set a password for your user, this is the password that you'll use for SSH Connections.
 
 ```
 ./sagemaker_ssh_ide.sh
